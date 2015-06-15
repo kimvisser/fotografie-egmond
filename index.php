@@ -32,8 +32,6 @@ $f3->route('GET /about',
    }
 );
 
-
-
 $f3->route('GET /products',
    function() {
       echo View::instance()->render('header.php');
