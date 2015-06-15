@@ -1,0 +1,3 @@
+<p>Beste {{ @name }},</p>
+<p>Je informatie aanvraag wordt in behandeling genomen, onze reactie volgt zo snel mogelijk.</p>
+<p>Met vriendelijke groet,<br>Fotografie Egmond</p>

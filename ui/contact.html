@@ -1,0 +1,80 @@
+      <div class="row content">
+         <div class="small-8 columns">
+            <check if="isset(@messages) && count(@messages)>0">
+               <repeat group="{{ @messages }}" value="{{ @message }}">
+            <div data-alert class="alert-box alert">{{ trim(@message) }}</div>
+               </repeat>
+            </check>
+            
+            <h3>Heeft u een vraag?</h3>
+            <form data-abide id="contactForm" action="{{ @httpHostContextPrefix }}contact-askquestion" method="post">
+
+               <div class="row">
+                  <div class="small-3 columns">
+                     <label for="right-label" class="right inline">Naam:</label>
+                  </div>
+                  <div class="small-9 columns">
+                     <input type="text" name="name" id="right-label" placeholder="Voer hier uw naam in ..." 
+value="{{ isset(@POST.name)?htmlspecialchars(@POST.name):'' }}" required pattern="[a-zA-Z]+">
+                     <small class="error">Naam is verplicht en moet uit letters bestaan</small>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="small-3 columns">
+                     <label for="right-label" class="right inline">Email:</label>
+                  </div>
+                  <div class="small-9 columns">
+                     <input type="email" name="email" id="right-label" placeholder="Voer hier uw email adres in ..." 
+value="{{ isset(@POST.email)?htmlspecialchars(@POST.email):'' }}" required>
+                     <small class="error">Email adres is verplicht</small>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="small-3 columns">
+                     <label for="right-label" class="right inline">Telefoon:</label>
+                  </div>
+                  <div class="small-9 columns">
+                     <input type="number" name="phone" id="right-label" placeholder="Voer hier uw telefoon nummer in (niet verplicht) ..." 
+value="{{ isset(@POST.phone)?htmlspecialchars(@POST.phone):'' }}">
+                     <small class="error">Telefoon nummer moet uit cijfers bestaan</small>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="small-3 columns">
+                     <label for="right-label" class="right inline">Uw vraag:</label>
+                  </div>
+                  <div class="small-9 columns">
+                     <textarea id="right-label" name="question" class="question" placeholder="Stel hier uw vraag ..." required>{{ isset(@POST.question)?htmlspecialchars(@POST.question):'' }}</textarea>
+                     <small class="error">U moet een vraag invoeren</small>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="small-3 columns">
+                     <label for="right-label" class="right inline"><img src="./captcha" title="captcha image" alt="captcha"/></label>
+                  </div>
+                  <div class="small-9 columns">
+                     <input type="text" id="right-label" name="captcha" placeholder="Voer de hiernaast getoonde code in ..." required>
+                     <small class="error">Voer de hiernaast weergegeven code in</small>
+                  </div>
+               </div>
+               
+               <div class="row">
+                  <div class="small-offset-3 small-9 columns">
+                     <a href="javascript:;" onclick="document.getElementById('contactForm').submit();" class="button">Stuur uw vraag op naar Fotografie Egmond</a>
+                  </div>
+               </div>
+               
+            </form>
+         </div>
+         
+         <div class="small-4 columns">
+            <h3>Waar vindt u ons?</h3>
+
+            <a href="https://www.facebook.com/fotografieegmond" target="_blank" alt="facebook"><img src="img/facebook.png" alt="facebook"></a>
+            &nbsp;<a href="https://twitter.com/FotoEgmond" target="_blank" alt="twitter"><img src="img/twitter.png" alt="twitter"></a>
+         </div>
+      </div>

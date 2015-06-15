@@ -1,0 +1,19 @@
+Options +FollowSymLinks -MultiViews -Indexes
+
+RewriteEngine on  
+# development
+RewriteBase /fotografie-egmond/
+# production
+# RewriteBase /
+
+# prevent image hotlinking
+RewriteCond %{HTTP_REFERER} !^$  
+RewriteCond %{HTTP_REFERER} !^http://(www.)?fotografie-egmond.nl/ [NC]  
+RewriteCond %{HTTP_REFERER} !^http://localhost/fotografie-egmond/ [NC]  
+RewriteRule .(gif|jpg|png)$ - [F]
+
+# lead all other traffic to index.php which contains F3 routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^([a-zA-Z0-9_-]+)?/?.* index.php [L,QSA]

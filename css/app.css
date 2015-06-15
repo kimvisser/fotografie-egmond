@@ -1,0 +1,131 @@
+html, body {
+   background: #777;
+}
+
+/* ----------------------------------------
+site blocks
+ ---------------------------------------- */
+#header-band {
+   background: #777 url('../img/header/egmond04.jpg') no-repeat fixed top; 
+   height: 240px;
+}
+
+#header-band .logo {
+   margin: 10px 20px 0 0;
+   opacity:0.2;
+   filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+
+#footer-band {
+   background: #444;
+   padding-top: 10px;
+   background: #444444;
+   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMjIyMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+   background: -moz-linear-gradient(top,  #444444 0%, #222222 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#222222));
+   background: -webkit-linear-gradient(top,  #444444 0%,#222222 100%);
+   background: -o-linear-gradient(top,  #444444 0%,#222222 100%);
+   background: -ms-linear-gradient(top,  #444444 0%,#222222 100%);
+   background: linear-gradient(to bottom,  #444444 0%,#222222 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 );
+}
+
+#footer-band ul {
+   margin-left:15px;
+}
+#footer-band  p,#footer-band ul li {
+   color: #aaa;
+   font-size: 0.7em;
+}
+#footer-band  h1, #footer-band  h2, #footer-band h3, #footer-band h4, #footer-band h5, #footer-band h6 {
+   color: #2ba6cb;
+   font-size: 0.9em;
+}
+
+#copyright-band {
+   color: #ddd;
+   font-size: 0.9em;
+   padding-top: 10px;
+}
+
+#orderlink{
+   margin: -15px auto 10px auto;
+}  
+
+article ul {
+   margin-left:15px;
+}
+
+/* ----------------------------------------
+foundation overrides
+ ---------------------------------------- */
+p, .content li {
+  font-size: 0.8em;
+}
+
+div.content {
+   margin-bottom: 20px;
+}
+
+div.content img.border {
+   padding:8px;
+   border:2px solid #ddd;
+   background-color:#444;
+}
+
+textarea.question {
+   height: 200px;
+}
+
+blockquote  {
+   padding:10px;
+   background-color: #999;
+   border-left: 4px solid #2ba6cb;
+   color: #ddd;
+   font-size:  0.8em;
+}
+blockquote cite {
+   margin-top:5px;
+   color: #ddd;
+   font-size:  0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   color: #2ba6cb;
+}
+
+.subheader {   
+   font-size: 0.9em;
+   color: #222;
+   font-style: italic;
+}
+
+hr {
+   border-color: #444;
+}
+
+/* ----------------------------------------
+gallery stuff
+ ---------------------------------------- */
+#gallery .hidden {
+	display: none;
+}
+
+.demo .colors {
+  overflow: hidden;
+  margin: 20px 0;
+  padding-left: 55px;
+}
+
+.demo .colors li {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 10px;
+  float: left;
+  border: 16px solid;
+}
+
+.demo .warm {
+  display: none;
+}

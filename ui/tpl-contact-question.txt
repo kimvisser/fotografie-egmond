@@ -1,0 +1,5 @@
+<p>Informatie verzoek</p>
+<p>Naam: {{ @name }}
+<br>Email: {{ @email }}
+<br>Telefoon: {{ @phone }}
+<br>Vraag: </p><p>{{ @question }}</p>
