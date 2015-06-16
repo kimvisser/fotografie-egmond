@@ -3702,11 +3702,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #00b0e4;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #00b0e4; }
   a img {
     border: none; }
 

@@ -1,81 +1,106 @@
-    <div class="row content">
-        <div id="gallery" class="large-12 small-12 columns">
-            <dl class="sub-nav" id="gallery-source">
-              <dt>Categorie:</dt>
-              <dd class="active"><a href="portfolio/all" id="category-all">Alles</a></dd>
-              <dd><a href="portfolio/strand" 				id="category-strand">Strand</a></dd>
-              <dd><a href="portfolio/duin" 					id="category-duin">Duin</a></dd>
-              <dd><a href="portfolio/vuurtoren" 			id="category-vuurtoren">Vuurtoren</a></dd>
-            </dl>
+<div class="row content">
+    <div id="gallery" class="large-12 small-12 columns">
+        <dl class="sub-nav portfolio-category filter" >
+            <dt>Categorie:</dt>
+            <dd class="active"><a href="#" class="all">Alles</a></dd>
+            <dd><a href="#" class="strand">Strand</a></dd>
+            <dd><a href="#" class="duin">Duin</a></dd>
+            <dd><a href="#" class="vuurtoren">Vuurtoren</a></dd>
+        </dl>
 
-            <ul id="gallery-destination_all" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                <!-- strand -->
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20120512__Strand.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20121007__GolfbrekerSchoorl.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20121111__ZonsondergangHargenAanZee.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20130727__ZonsondergangStrandEgmondBinnen1.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20130902__Strandstoelen.jpg&size=<300' /></li>
+        <ul class="portfolio-area">
 
-              <!-- duinen -->
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20121111__Duinbos.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20131115__SpiegelDuinen.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20140816__PaarseDuinenPanorama.jpg&size=<300' /></li>
+            <li class="portfolio-item2" data-id="id-0" data-type="strand">
+                <div>
+                    <a href="gallery/10__Strand/20120512__Strand.jpg"
+                       rel="prettyPhoto[ gallery ]"
+                       title="Wall-E">
+                        <img src="app/thumb.php?src=../gallery/10__Strand/20120512__Strand.jpg&size=<300"
+                             class="th"
+                             alt="Wall-E"
+                             title="Wall-E"/>
+                    </a>
 
-              <!-- vuurtoren -->
-              <li><img class="th" src='app/thumb.php?src=../gallery/40__Vuurtoren/20120614__HekVoorVuurtorenVanSpeijkHorizontaal.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/40__Vuurtoren/20120614__PadVuurtorenVanSpeijk.jpg&size=<300' /></li>
-            </ul>
+                    <div class="home-portfolio-text">
+                        <h5><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h5>
+                        <!--                        <p>released: 2008</p>-->
+                    </div>
+                </div>
+            </li>
 
-            <ul id="gallery-destination_strand" class="hidden small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20120512__Strand.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20121007__GolfbrekerSchoorl.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20121111__ZonsondergangHargenAanZee.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20130727__ZonsondergangStrandEgmondBinnen1.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20130902__Strandstoelen.jpg&size=<300' /></li>
-            </ul>
+            <li class="portfolio-item2" data-id="id-1" data-type="strand">
+                <div>
+                    <a href="gallery/10__Strand/20121007__GolfbrekerSchoorl.jpg"
+                       rel="prettyPhoto[ gallery ]"
+                       title="Wall-E">
+                        <img src="app/thumb.php?src=../gallery/10__Strand/20121007__GolfbrekerSchoorl.jpg&size=<300"
+                             class="th"
+                             alt="Wall-E"
+                             title="Wall-E"/>
+                    </a>
 
-            <ul id="gallery-destination_duin" class="hidden small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20121111__Duinbos.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20131115__SpiegelDuinen.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/20__Duinen/20140816__PaarseDuinenPanorama.jpg&size=<300' /></li>
-            </ul>
+                    <div class="home-portfolio-text">
+                        <h5><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h5>
+                        <!--                        <p>released: 2008</p>-->
+                    </div>
+                </div>
+            </li>
 
-            <ul id="gallery-destination_vuurtoren" class="hidden small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-              <li><img class="th" src='app/thumb.php?src=../gallery/40__Vuurtoren/20120614__HekVoorVuurtorenVanSpeijkHorizontaal.jpg&size=<300' /></li>
-              <li><img class="th" src='app/thumb.php?src=../gallery/40__Vuurtoren/20120614__PadVuurtorenVanSpeijk.jpg&size=<300' /></li>
-            </ul>
+            <li class="portfolio-item2" data-id="id-2" data-type="strand">
+                <div>
+                    <a href="gallery/10__Strand/20121111__ZonsondergangHargenAanZee.jpg"
+                       rel="prettyPhoto[ gallery ]"
+                       title="Wall-E">
+                        <img src="app/thumb.php?src=../gallery/10__Strand/20121111__ZonsondergangHargenAanZee.jpg&size=<300"
+                             class="th"
+                             alt="Wall-E"
+                             title="Wall-E"/>
+                    </a>
 
-        </div>
+                    <div class="home-portfolio-text">
+                        <h5><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h5>
+                        <!--                        <p>released: 2008</p>-->
+                    </div>
+                </div>
+            </li>
+
+            <li class="portfolio-item2" data-id="id-3" data-type="strand">
+                <div>
+                    <a href="gallery/10__Strand/20130727__ZonsondergangStrandEgmondBinnen1.jpg"
+                       rel="prettyPhoto[ gallery ]"
+                       title="Wall-E">
+                        <img src="app/thumb.php?src=../gallery/10__Strand/20130727__ZonsondergangStrandEgmondBinnen1.jpg&size=<300"
+                             class="th"
+                             alt="Wall-E"
+                             title="Wall-E"/>
+                    </a>
+
+                    <div class="home-portfolio-text">
+                        <h5><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h5>
+                        <!--                        <p>released: 2008</p>-->
+                    </div>
+                </div>
+            </li>
+
+            <li class="portfolio-item2" data-id="id-4" data-type="duin">
+                <div>
+                    <a href="gallery/20__Duinen/20121111__Duinbos.jpg"
+                       rel="prettyPhoto[ gallery ]"
+                       title="Wall-E">
+                        <img src="app/thumb.php?src=../gallery/20__Duinen/20121111__Duinbos.jpg&size=<300"
+                             class="th"
+                             alt="Wall-E"
+                             title="Wall-E"/>
+                    </a>
+
+                    <div class="home-portfolio-text">
+                        <h5><a href="#" rel="bookmark" title="Wall-E">Wall-E</a></h5>
+                        <!--                        <p>released: 2008</p>-->
+                    </div>
+                </div>
+            </li>
+
+        </ul>
     </div>
+</div>
 
-    <script>
-        $(function() {
-          $('#category-strand').click(function(e) {
-             $('#gallery-destination_all').quicksand( $('#gallery-destination_strand li'), {
-                duration: 1000,
-                attribute: 'id'
-             });
-             $('#gallery-destination_strand').show();
-             e.preventDefault();
-          });
-
-          $('#category-duin').click(function(e) {
-             $('#gallery-destination_all').quicksand( $('#gallery-destination_duin li'), {
-                duration: 1000,
-                attribute: 'id'
-             });
-             $('#gallery-destination_duin').show();
-             e.preventDefault();
-          });
-
-          $('#category-vuurtoren').click(function(e) {
-             $('#gallery-destination_all').quicksand( $('#gallery-destination_vuurtoren li'), {
-                duration: 1000,
-                attribute: 'id'
-             });
-             $('#gallery-destination_vuurtoren').show();
-             e.preventDefault();
-          });
-
-      });
-    </script>
