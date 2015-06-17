@@ -7,8 +7,13 @@
             <dd><a href="#" class="duin">Duin</a></dd>
             <dd><a href="#" class="vuurtoren">Vuurtoren</a></dd>
         </dl>
-
-        <ul class="portfolio-area">
+<!--
+        <ul id="gallery-destination_all" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+            !-- strand --
+            <li><img class="th" src='app/thumb.php?src=../gallery/10__Strand/20120512__Strand.jpg&size=<300' /></li>
+        </ul>
+-->
+        <ul class="portfolio-area small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 
             <li class="portfolio-item2" data-id="id-0" data-type="strand">
                 <div>
